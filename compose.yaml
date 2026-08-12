@@ -1,0 +1,11 @@
+services:
+  rstudio:
+    image: ghcr.io/amelzulji/grk2727-ws260824:0.6
+    ports:
+      - "8787:8787"
+    environment:
+      DISABLE_AUTH: "true"
+    volumes:
+      - ./scripts:/home/rstudio/code
+      - ./data:/home/rstudio/data
+      - ./outout:/home/rstudio/output
