@@ -51,4 +51,5 @@ rsconnect/
 .DS_Store
 dev/
 data/
-
+output/
+setup/
